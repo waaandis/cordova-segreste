@@ -161,15 +161,15 @@ video{
 
 .item:hover{cursor:crosshair;}
 
-.item:hover figure img{
-	-webkit-transform:scale(1.5);
-	-moz-transform:scale(1.5);
-	-ms-transform:scale(1.5);
-	transform:scale(1.5);
-	-webkit-transition:-webkit-transform ease-out 1s;
-	-moz-transition:-moz-transform ease-out 1s;
-	-ms-transition:-ms-transform ease-out 1s;
-	transition:transform ease-out 1s;
+.item{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition:all 0.5s ease;
+  text-align: center;
+}
+.item:hover{
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .item h4{
